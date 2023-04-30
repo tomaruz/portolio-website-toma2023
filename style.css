@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.column {
+    padding-left: 8px;
+    padding-right: 8px;
+    align-items: center;
+}
+
+#col1 {
+    flex: 50%;
+}
+
+#col2 {
+    flex: 50%;
+}
