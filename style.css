@@ -2,18 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(68, 66, 66);
+    background-color: rgb(255, 255, 255);
+    font-family:'Aboreto', cursive;
 }
 
-#row {
+#gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .column {
-    padding-left: 8px;
-    padding-right: 8px;
     align-items: center;
 }
 
@@ -23,16 +22,16 @@
 
 #col2 {
     flex: 50%;
+    margin-top: 20%;
 }
 
 .flex-image {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-    margin-bottom: 10px;
+    padding: 2rem;
 }
 
-.flex-image:hover {
+/* .flex-image:hover {
     filter: brightness(40%);
     transform: scale(1.05);
     transition: all 0.4s;
@@ -40,7 +39,7 @@
 
 .flex-image:active {
     filter: brightness(80%);
-}
+} */
 
 /*optimasied for tablet*/
 @media (max-width: 900px) {
