@@ -3,7 +3,47 @@
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    font-family:'Aboreto', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(27, 27, 27);
+}
+
+/* NAVIGATION BAR */
+
+
+
+
+/* LANDING PAGE HEADER */
+
+.header {
+    margin: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 15rem;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* PROJECT GALLERY */
+
+.title {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p {
+    font-size: large;
+    font-weight: 400;
 }
 
 #gallery {
@@ -28,7 +68,9 @@
 .flex-image {
     max-width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 
 /* .flex-image:hover {
@@ -41,26 +83,99 @@
     filter: brightness(80%);
 } */
 
+
+
 /*optimasied for tablet*/
 @media (max-width: 900px) {
 
-    #header {
-        text-align: left;
+    /* LANDING PAGE HEADER */
+    .header {
+        margin: 0rem;
+        padding-left: 1.5rem;
+        padding-bottom: 8rem;
+        width: 80%;
     }
 
-    #col1 {
-        min-width: 60%;
+    h1 {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* PROJECT GALLERY */
+    .title {
+        padding-left: 0.5rem;
+        padding-top: 2.5rem;
+    }
+
+    h2 {
+        font-size: medium;
+
+    }
+
+    p {
+        font-size: small;
+    }
+
+    #gallery {
+        flex-direction: column;
     }
 
     #col2 {
-        min-width: 40%;
+        margin-top: 0;
     }
+
+    .flex-image {
+        max-width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
 }
 
 /*optimised for mobile*/
 @media (max-width:500px) {
 
-    #row {
+    /* LANDING PAGE HEADER */
+    .header {
+        margin: 0rem;
+        padding-left: 1.5rem;
+        padding-bottom: 8rem;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* PROJECT GALLERY */
+    .title {
+        padding-left: 0.5rem;
+        padding-top: 2.5rem;
+    }
+
+    h2 {
+        font-size: medium;
+
+    }
+
+    p {
+        font-size: small;
+    }
+
+    #gallery {
         flex-direction: column;
+    }
+
+    #col2 {
+        margin-top: 0;
+    }
+
+    .flex-image {
+        max-width: 100%;
+        height: auto;
+        padding: 0.5rem;
     }
 }
