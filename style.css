@@ -4,7 +4,7 @@
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    color: rgb(27, 27, 27);
+    color: #121212;
 }
 
 /* NAVIGATION BAR */
@@ -23,7 +23,7 @@
     text-align: right;
     padding: 24px 14px;
     text-decoration: none;
-    font-size: large;
+    font-size: 1.5rem;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -43,7 +43,7 @@
   
   .line {
     width: 98%;
-    border-bottom: 2px solid rgb(27, 27, 27);
+    border-bottom: 2.5px solid #121212;
   }
 
 /* LANDING PAGE HEADER */
@@ -71,13 +71,13 @@ h1 {
 }
 
 h2 {
-    font-size: larger;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
 }
 
 p {
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -85,6 +85,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    padding-bottom: 5rem;
 }
 
 .column {
@@ -105,7 +106,7 @@ p {
     height: auto;
     padding: 1.5rem;
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 /* .flex-image:hover {
@@ -120,8 +121,54 @@ p {
 
 
 
+/* FOOTER */
+
+.footer {
+    margin: 1rem;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    width: 80%;
+    height: 40vw;
+
+}
+
+.footer h1 {
+    font-size: 4.2rem;
+}
+
+.footer h2 {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.contact-container {
+    display: flex;
+    padding-top: 5rem;
+
+}
+
+.funky-arrow-right {
+margin-right: 1.5rem;
+width: 13rem;
+}
+
+.contact-info {
+    padding-top: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* center child elements vertically */
+    justify-content: center; /* center child elements horizontally */
+  }
+  
+  .contact-info h2 {
+    font-size: 3rem;
+  }
+  
+
+
 /*optimasied for tablet*/
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     /* LANDING PAGE HEADER */
     .header {
@@ -141,20 +188,12 @@ p {
     /* PROJECT GALLERY */
     .title {
         padding-left: 0.5rem;
-        padding-top: 2.5rem;
-    }
-
-    h2 {
-        font-size: medium;
-
-    }
-
-    p {
-        font-size: small;
+        padding-top: 6rem;
     }
 
     #gallery {
         flex-direction: column;
+        padding-bottom: 4rem;
     }
 
     #col2 {
@@ -165,8 +204,9 @@ p {
         max-width: 100%;
         height: auto;
         padding: 0.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -199,7 +239,7 @@ p {
 }
 
 /*optimised for mobile*/
-@media (max-width:600px) {
+@media (max-width:800px) {
 
     /* LANDING PAGE HEADER */
     .header {
@@ -222,12 +262,12 @@ p {
     }
 
     h2 {
-        font-size: medium;
-
+        font-size: 1rem;
+padding-top: 1rem;
     }
-
+    
     p {
-        font-size: small;
+        font-size: 0.8rem;
     }
 
     #gallery {
