@@ -262,7 +262,40 @@ p {
         padding-bottom: 1rem;
         padding-top: 1rem;
     }
+
+    /* INFO PAGE*/
+
+.about-me-container {
+    padding-top: 0rem;
+    padding-left: 2.5rem;
+    background-color: beige;
 }
+
+/* h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+} */
+
+/* .about-me-title h1 {
+    width: 50%;
+    line-height: normal;
+    font-size: 3vw;
+    padding-bottom: 3rem;
+} */
+
+
+/* .about-me-container2 {
+    padding-left: 2.5rem;
+} */
+
+
+.more-about-me  {
+    flex-direction: column;
+}
+
+}
+
 
 @media screen and (max-width: 900px) {
     .topnav a {
@@ -338,6 +371,10 @@ p {
         height: auto;
         padding: 0.5rem;
     }
+
+
+
+
 }
 
 /* ANIMATIONS */
@@ -380,7 +417,6 @@ a.left:hover:before {
 .about-me-container {
     padding-top: 5rem;
     padding-left: 2.5rem;
-
 }
 
 h3 {
@@ -449,4 +485,98 @@ h3 {
 
 #col7 {
     flex: 20%;
+}
+
+/* PROJECT NAV TOP BAR */
+
+.project-nav-top {
+    display: flex;
+    padding-top: 3rem;
+  padding-left: 2.5rem;
+    justify-content: space-between;
+    width: 98%;
+
+}
+
+.arrow-left{
+    margin-right: 1.5rem;
+    width: 5rem;
+}
+
+.previous-project {
+    display: flex;
+    align-items: center;
+    /* center child elements vertically */
+    justify-content: center;
+    /* center child elements horizontally */
+
+    order: 1;
+}
+
+.arrow-right{
+    width: 5rem;
+    margin-left: 1.5rem;
+}
+
+.next-project {
+    display: flex;
+    align-items: center;
+    /* center child elements vertically */
+    justify-content: center;
+    /* center child elements horizontally */
+    order: 2;
+}
+
+/* PROJECT TITLE */
+
+.project-title {
+    padding-left: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+}
+
+
+/* ABOUT PROJECT */
+.about-project  {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+
+}
+
+
+#col8 {
+    flex: 40%;
+    padding-left: 2.5rem;
+}
+
+#col9 {
+    flex: 40%;
+}
+
+
+
+.about-project2  {
+    width: 80%;
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.column2 {
+    flex-direction: row;
+}
+
+#col10 {
+    flex: 10%;
+
+}
+
+#col11 {
+    flex: 10%;
 }
