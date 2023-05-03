@@ -28,7 +28,6 @@
     margin-left: 15px;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 400;
 }
 
 .menu-items {
@@ -147,7 +146,8 @@ p {
     float: right;
     display: block;
     text-align: right;
-    padding: 24px 14px;
+    padding: 10px 10px;
+    margin-left: 15px;
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -159,6 +159,7 @@ p {
     padding-left: 1.5rem;
     width: 98%;
     height: 30vw;
+
 }
 
 .footer h1 {
@@ -345,9 +346,9 @@ p {
 
 a.left {
     position: relative;
-  }
-  
-  a.left:before {
+}
+
+a.left::before {
     content: '';
     position: absolute;
     width: 0;
@@ -355,14 +356,97 @@ a.left {
     bottom: 0;
     left: 0;
     background-color: #121212;
-    visibility: hidden;
+    visibility: visible;
     transition: all 0.4s ease-in-out;
-  }
-  
-  a.left:hover:before {
+}
+
+a.left:hover:before {
     visibility: visible;
     width: 100%;
-  }
-  
-  
+}
 
+
+
+
+/* .info:hover {
+    text-decoration: underline;
+} */
+
+
+
+
+/* INFO PAGE STYLING */
+
+.about-me-container {
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.about-me-title h1 {
+    width: 50%;
+    line-height: normal;
+    font-size: 3vw;
+    padding-bottom: 3rem;
+}
+
+
+.about-me-container2 {
+    padding-left: 2.5rem;
+}
+
+
+.more-about-me  {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.column1 {
+    align-items: center;
+}
+
+#col3 {
+    flex: 25%;
+}
+
+#col4 {
+    flex: 25%;
+}
+
+
+.about-me-container2  {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.column1 {
+    align-items: center;
+}
+
+#col5 {
+    flex: 50%;
+}
+
+#col6 {
+    flex: 20%;
+}
+
+#col7 {
+    flex: 20%;
+}
