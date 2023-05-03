@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     color: #121212;
 }
@@ -10,26 +9,37 @@
 /* NAVIGATION BAR */
 
 .topnav {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
     overflow: hidden;
-    margin-right: 2.5rem;
+    order: 1;
+    padding-left: 2.5rem;
+    width: 98%;
 }
-
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
     display: block;
     text-align: right;
-    padding: 24px 14px;
+    padding: 10px 10px;
+    margin-left: 15px;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.menu-items {
+    order: 2;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
+
 
 
 /* A LINE TO SEPERATE CONTENT */
@@ -39,20 +49,22 @@
     display: flex;
     height: 1rem;
     justify-content: center;
-  }
-  
-  .line {
+    padding-top: 20px;
+}
+
+.line {
+
     width: 98%;
-    border-bottom: 2.5px solid #121212;
-  }
+    border-bottom: 2.5px solid;
+}
 
 /* LANDING PAGE HEADER */
 
 .header {
     margin: 1rem;
-    padding-top: 10rem;
+    padding-top: 15rem;
     padding-left: 1.5rem;
-    padding-bottom: 15rem;
+    padding-bottom: 25rem;
     width: 80%;
 }
 
@@ -123,23 +135,42 @@ p {
 
 /* FOOTER */
 
+.footer-menu {
+    margin-top: 1rem;
+    overflow: hidden;
+    margin-right: 2.5rem;
+}
+
+
+/* Style the links inside the navigation bar */
+.footer-menu a {
+    float: right;
+    display: block;
+    text-align: right;
+    padding: 24px 14px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 .footer {
     margin: 1rem;
-    padding-top: 4rem;
+    margin-top: 0;
+    padding-top: 0rem;
     padding-left: 1.5rem;
-    width: 80%;
-    height: 40vw;
-
+    width: 98%;
+    height: 30vw;
 }
 
 .footer h1 {
     font-size: 4.2rem;
+
 }
 
 .footer h2 {
     padding-top: 0.5rem;
     font-size: 1.8rem;
     font-weight: 400;
+    width: 80%;
 }
 
 .contact-container {
@@ -149,23 +180,46 @@ p {
 }
 
 .funky-arrow-right {
-margin-right: 1.5rem;
-width: 13rem;
+    margin-right: 1.5rem;
+    width: 13rem;
 }
 
 .contact-info {
     padding-top: 1rem;
     justify-content: center;
     display: flex;
-    align-items: center; /* center child elements vertically */
-    justify-content: center; /* center child elements horizontally */
-  }
-  
-  .contact-info h2 {
-    font-size: 3rem;
-  }
-  
+    align-items: center;
+    /* center child elements vertically */
+    justify-content: center;
+    /* center child elements horizontally */
+}
 
+.contact-info h2 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+
+.footer-smallprint {
+    padding-top: 12vw;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.mynametag {
+    font-size: 1rem;
+    order: 1;
+    /* move the mynametag div to the left */
+}
+
+.footer-smallprint p {
+    font-size: 1rem;
+    order: 2;
+    /* move the p tag to the right */
+}
 
 /*optimasied for tablet*/
 @media (max-width: 1200px) {
@@ -263,9 +317,9 @@ width: 13rem;
 
     h2 {
         font-size: 1rem;
-padding-top: 1rem;
+        padding-top: 1rem;
     }
-    
+
     p {
         font-size: 0.8rem;
     }
@@ -284,3 +338,31 @@ padding-top: 1rem;
         padding: 0.5rem;
     }
 }
+
+/* ANIMATIONS */
+
+/* MENU ITEM UNDERLINE ANIMATION */
+
+a.left {
+    position: relative;
+  }
+  
+  a.left:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  
+
