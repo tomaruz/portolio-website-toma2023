@@ -373,9 +373,6 @@ p {
         padding: 0.5rem;
     }
 
-
-
-
 }
 
 
@@ -557,4 +554,8 @@ h3 {
     display: flex; 
     justify-content: flex-end; 
     padding-right: 2.5rem;
+}
+
+.project-container {
+    opacity: 0;
 }

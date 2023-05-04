@@ -13,14 +13,34 @@ function myFunction() {
 
   // GALLERY FADE IN ANIMATION
 
-  // add the fadeInTop class to project-container when it comes into view 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // stop observing the element once it's visible
+      }
+    });
+  }, { once: true });
+  
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
+  
 
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry =>{
-  if(entry.isIntersecting){
-    document.querySelectorAll(".animated")[0].classList.add("fadeInTop")
-  }
-})
-})
 
-observer.observe(document.querySelector(".project-container"));
+
+  // using GREENSOCK
+
+  // gsap.utils.toArray('.project-container').forEach(box => {
+  //   gsap.fromTo(box, {
+  //       autoAlpha: 0, 
+  //       y: 50
+  //     }, {
+  //     scrollTrigger: {
+  //       trigger: box,
+  //       once: true,
+  //     },
+  //     duration: 2, 
+  //     autoAlpha: 1, 
+  //     y: 0
+  //   });
+  // });
