@@ -17,7 +17,7 @@ function myFunction() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
-        observer.unobserve(entry.target); // stop observing the element once it's visible
+        observer.unobserve(entry.target); // stop observing the element once it's visible, so animation runs only once
       }
     });
   }, { once: true });
