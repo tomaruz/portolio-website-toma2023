@@ -1,10 +1,10 @@
 /* ANIMATIONS */
 
-.topnav {
-    -webkit-animation: fadeInBottom 1s both;
-    -moz-animation: fadeInBottom 1s both;
-    -o-animation: fadeInBottom 1s both;
-    animation: fadeInBottom 1s both;
+.topnav{
+    -webkit-animation: fadeInBottom 2s both;
+    -moz-animation: fadeInBottom 2s both;
+    -o-animation: fadeInBottom 2s both;
+    animation: fadeInBottom 2s both;
 }
 
 /* .line-container {
@@ -15,11 +15,18 @@
 } */
 
 
+.fadeInTop {
+    -webkit-animation: fadeInTop 2s both;
+    -moz-animation: fadeInTop 2s both;
+    -o-animation: fadeInTop 2s both;
+    animation: fadeInTop 2s both;
+}
+
 .header {
-    -webkit-animation: fadeInTop 1s both;
-    -moz-animation: fadeInTop 1s both;
-    -o-animation: fadeInTop 1s both;
-    animation: fadeInTop 1s both;
+    -webkit-animation: fadeInTop 2s both;
+    -moz-animation: fadeInTop 2s both;
+    -o-animation: fadeInTop 2s both;
+    animation: fadeInTop 2s both;
 }
 
 .hidden {
@@ -27,10 +34,10 @@
 }
 
 .show {
-    -webkit-animation: fadeInTop 1s both;
-    -moz-animation: fadeInTop 1s both;
-    -o-animation: fadeInTop 1s both;
-    animation: fadeInTop 1s both;
+    -webkit-animation: fadeInTop 1.5s both;
+    -moz-animation: fadeInTop 1.5s both;
+    -o-animation: fadeInTop 1.5s both;
+    animation: fadeInTop 1.5s both;
 }
 
 
@@ -149,16 +156,34 @@ a.left::before {
     bottom: 0;
     left: 0;
     background-color: #121212;
-    visibility: visible;
-    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
 a.left:hover:before {
     visibility: visible;
     width: 100%;
+    opacity: 1;
 }
 
 
+a.underline {
+    position: relative;
+}
+a.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+  
 
 
 
