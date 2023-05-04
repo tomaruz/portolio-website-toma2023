@@ -65,6 +65,7 @@
     padding-left: 1.5rem;
     padding-bottom: 25rem;
     width: 80%;
+    opacity: 0;
 }
 
 h1 {
@@ -265,19 +266,19 @@ p {
 
     /* INFO PAGE*/
 
-.about-me-container {
-    padding-top: 0rem;
-    padding-left: 2.5rem;
-    background-color: beige;
-}
+    .about-me-container {
+        padding-top: 0rem;
+        padding-left: 2.5rem;
+        background-color: beige;
+    }
 
-/* h3 {
+    /* h3 {
     font-size: 1.5rem;
     font-weight: 500;
     padding-bottom: 2rem;
 } */
 
-/* .about-me-title h1 {
+    /* .about-me-title h1 {
     width: 50%;
     line-height: normal;
     font-size: 3vw;
@@ -285,14 +286,14 @@ p {
 } */
 
 
-/* .about-me-container2 {
+    /* .about-me-container2 {
     padding-left: 2.5rem;
 } */
 
 
-.more-about-me  {
-    flex-direction: column;
-}
+    .more-about-me {
+        flex-direction: column;
+    }
 
 }
 
@@ -377,40 +378,6 @@ p {
 
 }
 
-/* ANIMATIONS */
-
-/* MENU ITEM UNDERLINE ANIMATION */
-
-a.left {
-    position: relative;
-}
-
-a.left::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #121212;
-    visibility: visible;
-    transition: all 0.4s ease-in-out;
-}
-
-a.left:hover:before {
-    visibility: visible;
-    width: 100%;
-}
-
-
-
-
-/* .info:hover {
-    text-decoration: underline;
-} */
-
-
-
 
 /* INFO PAGE STYLING */
 
@@ -438,7 +405,7 @@ h3 {
 }
 
 
-.more-about-me  {
+.more-about-me {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5rem;
@@ -461,7 +428,7 @@ h3 {
 }
 
 
-.about-me-container2  {
+.about-me-container2 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5rem;
@@ -492,13 +459,13 @@ h3 {
 .project-nav-top {
     display: flex;
     padding-top: 3rem;
-  padding-left: 2.5rem;
+    padding-left: 2.5rem;
     justify-content: space-between;
     width: 98%;
 
 }
 
-.arrow-left{
+.arrow-left {
     margin-right: 1.5rem;
     width: 5rem;
 }
@@ -513,7 +480,7 @@ h3 {
     order: 1;
 }
 
-.arrow-right{
+.arrow-right {
     width: 5rem;
     margin-left: 1.5rem;
 }
@@ -537,21 +504,20 @@ h3 {
 
 
 /* ABOUT PROJECT */
-.about-project  {
+.about-project {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5rem;
-    width: 80%;
+    padding-left: 6.5rem;
+    width: 85%;
     justify-content: space-between;
     align-items: flex-start;
     gap: 5rem;
-
 }
 
 
 #col8 {
     flex: 40%;
-    padding-left: 2.5rem;
 }
 
 #col9 {
@@ -560,7 +526,7 @@ h3 {
 
 
 
-.about-project2  {
+.about-project2 {
     width: 80%;
     padding-top: 4rem;
     display: flex;
@@ -579,4 +545,16 @@ h3 {
 
 #col11 {
     flex: 10%;
+}
+
+
+.withimage {
+    display: flex;
+    padding-left: 2.5rem;
+}
+
+.withimagenext {
+    display: flex; 
+    justify-content: flex-end; 
+    padding-right: 2.5rem;
 }

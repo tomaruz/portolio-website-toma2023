@@ -1,0 +1,48 @@
+
+/* ANIMATIONS */
+
+* {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+/* MENU ITEM UNDERLINE ANIMATION */
+
+a.left {
+    position: relative;
+}
+
+a.left::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* .info:hover {
+    text-decoration: underline;
+} */
+
+
