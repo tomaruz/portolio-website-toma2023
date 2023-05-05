@@ -1,0 +1,152 @@
+/*optimased for tablet*/
+
+@media (max-width: 1200px) {
+
+    /* LANDING PAGE HEADER */
+    .header {
+        margin: 0rem;
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 8rem;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* PROJECT GALLERY */
+    .title {
+        padding-left: 0.5rem;
+        padding-top: 6rem;
+    }
+
+    #gallery {
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    #col2 {
+        margin-top: 0;
+    }
+
+    .flex-image {
+        max-width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    /* INFO PAGE*/
+
+    .about-me-container {
+        padding-top: 0rem;
+        padding-left: 2.5rem;
+        background-color: beige;
+    }
+
+    /* h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+} */
+
+    /* .about-me-title h1 {
+    width: 50%;
+    line-height: normal;
+    font-size: 3vw;
+    padding-bottom: 3rem;
+} */
+
+
+    /* .about-me-container2 {
+    padding-left: 2.5rem;
+} */
+
+
+    .more-about-me {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/*optimised for mobile*/
+@media (max-width:800px) {
+
+    /* LANDING PAGE HEADER */
+    .header {
+        margin: 0rem;
+        padding-left: 1.5rem;
+        padding-bottom: 8rem;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    /* PROJECT GALLERY */
+    .title {
+        padding-left: 0.5rem;
+        padding-top: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #gallery {
+        flex-direction: column;
+    }
+
+    #col2 {
+        margin-top: 0;
+    }
+
+    .flex-image {
+        max-width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+}

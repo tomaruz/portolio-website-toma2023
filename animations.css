@@ -1,19 +1,11 @@
 /* ANIMATIONS */
 
-.topnav{
-    -webkit-animation: fadeInBottom 2s both;
-    -moz-animation: fadeInBottom 2s both;
-    -o-animation: fadeInBottom 2s both;
-    animation: fadeInBottom 2s both;
+.fadeInBottom {
+    -webkit-animation: fadeInBottom 2s both; /* safari version 4 and up */
+    -moz-animation: fadeInBottom 2s both; /* firefox version 5 and up */
+    -o-animation: fadeInBottom 2s both; /* opera version 12 and up */
+    animation: fadeInBottom 2s both; /* explorer version 10 and up, and firefox version 29 and up */
 }
-
-/* .line-container {
-    -webkit-animation: fadeInBottom 1s both;
-    -moz-animation: fadeInBottom 1s both;
-    -o-animation: fadeInBottom 1s both;
-    animation: fadeInBottom 1s both;
-} */
-
 
 .fadeInTop {
     -webkit-animation: fadeInTop 2s both;
@@ -22,12 +14,15 @@
     animation: fadeInTop 2s both;
 }
 
-.header {
-    -webkit-animation: fadeInTop 2s both;
-    -moz-animation: fadeInTop 2s both;
-    -o-animation: fadeInTop 2s both;
-    animation: fadeInTop 2s both;
+.fadeIn {
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    animation: fadeIn 2s;
 }
+
+
+/* animate when object comes into view (javascript activated) */
 
 .hidden {
     opacity: 0;
@@ -41,57 +36,9 @@
 }
 
 
-@-webkit-keyframes fadeInTop {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(30px);
-    }
+/* ANIMATION KEYFRAMES */
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0px);
-    }
-}
-
-@-moz-keyframes fadeInTop {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0px);
-    }
-}
-
-@-o-keyframes fadeInTop {
-    0% {
-        opacity: 0;
-        -o-transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        -o-transform: translateY(0px);
-    }
-}
-
-@keyframes fadeInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-
-
-/* NAV BAR TOP */
+/* fade in from top down */
 
 @-webkit-keyframes fadeInBottom {
     0% {
@@ -142,7 +89,125 @@
 }
 
 
+/* fade in from bottom up*/
+
+@-webkit-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-moz-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+}
+
+@-o-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* fade in */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* MENU ITEM UNDERLINE NOT ANIMATED */
+/* This CSS code applies an underline effect to all hyperlinks (anchor tags) on a web page. */
+
+a.underline {
+    position: relative;
+}
+
+a.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* the underline will span the entire width of the hyperlink */
+    height: 2.5px;
+    /* he thickness of the underline */
+    bottom: 0;
+    /* the underline will appear at the bottom of the hyperlink */
+    left: 0;
+    /* the underline will start at the left edge of the hyperlink */
+    background-color: #121212;
+    visibility: visible;
+}
+
+
 /* MENU ITEM UNDERLINE ANIMATION */
+/* This is a CSS code that adds a horizontal underline effect to a hyperlink when the mouse hovers over it. */
 
 a.left {
     position: relative;
@@ -167,26 +232,15 @@ a.left:hover:before {
     opacity: 1;
 }
 
+/* GALLERY IMAGE ANIMATION ON HOVER */
 
-a.underline {
-    position: relative;
+/* .flex-image:hover {
+    filter: brightness(40%);
+    transform: scale(1.05);
+    transition: all 0.4s;
 }
-a.underline::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #121212;
-    visibility: visible;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-}
-  
 
-
-
-/* .info:hover {
-    text-decoration: underline;
+.flex-image:active {
+    filter: brightness(80%);
 } */
+

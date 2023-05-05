@@ -11,6 +11,9 @@
     <!-- animation css file -->
 <link rel="stylesheet" href="animations.css">
 
+    <!-- optimasation for different devices CSS file-->
+    <link rel="stylesheet" href="optimasation.css">
+
     <script src="myscript.js" defer></script>
 
     <!-- Load roboto font from google fonts -->
@@ -59,20 +62,20 @@
 
     <div class="about-me-container">
 
-        <div class="about-me-title">
+        <div class="about-me-title fadeInBottom">
             <h3>About Me</h3>
             <h1>Hi, I'm Toma Ruzgailaite, a graphic designer based in Norwich, UK.</h1>
         </div>
 
         <div class="more-about-me">
 
-            <div id="col3" class="column1">
+            <div style="animation-delay: 0.5s;" id="col3" class="column1 fadeInTop">
                 <p>I have a passion for creating designs with a minimalistic style, and I love finding clever ways to
                     use
                     images and text to convey powerful messages and raise awareness on important issues.</p>
             </div>
 
-            <div id="col4" class="column1">
+            <div style="animation-delay: 0.7s;" id="col4" class="column1 fadeInTop">
                 <p>In addition to my design work, I'm also interested in coding and exploring new technologies to
                     enhance my
                     visual communication skills. My goal is to use my creativity and expertise to help your brand
@@ -87,7 +90,7 @@
     <div class="about-me-container2">
 
         <div id="col5" class="column2">
-            <div class="education">
+            <div style="animation-delay: 0.9s;" class="education fadeInTop">
                 <h3>Education</h3>
                 <p style="font-weight:500;">Norwich University of the Arts</p>
                 <p>BA(Hons) Graphic Communication with Diploma in Creative Coding</p>
@@ -97,7 +100,7 @@
         </div>
 
         <div id="col6" class="column2">
-            <div class="software">
+            <div style="animation-delay: 1s;" class="software fadeInTop">
                 <h3>Software</h3>
                 <p>Illustrator</p>
                 <p>InDesign</p>
@@ -110,7 +113,7 @@
         </div>
 
         <div id="col7" class="column2">
-            <div class="interests">
+            <div style="animation-delay: 1.1s;" class="interests fadeInTop">
                 <h3>Interests</h3>
                 <p>Brand & Identity</p>
                 <p>Campaign</p>
@@ -124,7 +127,6 @@
 
 
     <!-- A LINE TO SEPERATE CONTENT -->
-
     <div class="line-container">
         <div class="line"></div>
     </div>
@@ -132,18 +134,14 @@
 
     <!-- FOOTER -->
 
-    <div class="footer-menu">
-        <a class="underline" href="info.html">Info</a>
-        <a class="left" href="portfolio.html">Projects</a>
-    </div>
-
-    <div class="footer">
+    <div style="padding-top:1.5rem;" class="footer-container">
         <h1>Let's get in touch!</h1>
-        <h2 class="footer-text">If have any questions / feedback or would like to work together drop me a message.</h2>
+        <h2 class="footer-text">If have any questions / feedback or would like to work together drop me a
+            message.</h2>
 
         <div class="contact-container">
             <img class="funky-arrow-right" src="arrows/funky-arrow-right.svg">
-            <div class="contact-info">
+            <div class="email-container">
                 <h2>designbytoma@gmail.com</h2>
             </div>
         </div>

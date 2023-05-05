@@ -6,6 +6,8 @@
     color: #121212;
 }
 
+/* LANDING PAGE / GALLERY CSS */
+
 /* NAVIGATION BAR */
 
 .topnav {
@@ -34,7 +36,7 @@
     order: 2;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* The "display: none" property hides the icon so that it does not appear on the page. */
 .topnav .icon {
     display: none;
 }
@@ -44,18 +46,18 @@
 /* A LINE TO SEPERATE CONTENT */
 
 .line-container {
-    align-items: center;
     display: flex;
-    height: 1rem;
+    align-items: center;
     justify-content: center;
+    height: 1rem;
     padding-top: 20px;
 }
 
 .line {
-
     width: 98%;
     border-bottom: 2.5px solid;
 }
+
 
 /* LANDING PAGE HEADER */
 
@@ -65,7 +67,6 @@
     padding-left: 1.5rem;
     padding-bottom: 25rem;
     width: 80%;
-    opacity: 0;
 }
 
 h1 {
@@ -76,22 +77,6 @@ h1 {
 
 
 /* PROJECT GALLERY */
-
-.title {
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-p {
-    font-size: 1.2rem;
-    font-weight: 400;
-}
 
 #gallery {
     display: flex;
@@ -110,7 +95,23 @@ p {
 
 #col2 {
     flex: 50%;
-    margin-top: 20%;
+    margin-top: 20%; /* to create an offset */
+}
+
+.title {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .flex-image {
@@ -121,17 +122,6 @@ p {
     padding-bottom: 7rem;
 }
 
-/* .flex-image:hover {
-    filter: brightness(40%);
-    transform: scale(1.05);
-    transition: all 0.4s;
-}
-
-.flex-image:active {
-    filter: brightness(80%);
-} */
-
-
 
 /* FOOTER */
 
@@ -141,34 +131,28 @@ p {
     margin-right: 2.5rem;
 }
 
-
-/* Style the links inside the navigation bar */
+/* project and info bottom menu styling */
 .footer-menu a {
     float: right;
-    display: block;
-    text-align: right;
     padding: 10px 10px;
     margin-left: 15px;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.footer {
+/* footer container excludes the seperation line and the navigation bar (those are styles seperate */
+.footer-container {
     margin: 1rem;
-    margin-top: 0;
-    padding-top: 0rem;
     padding-left: 1.5rem;
     width: 98%;
     height: 30vw;
-
 }
 
-.footer h1 {
-    font-size: 4.2rem;
-
+.footer-container h1 {
+    font-size: 4rem;
 }
 
-.footer h2 {
+.footer-text {
     padding-top: 0.5rem;
     font-size: 1.8rem;
     font-weight: 400;
@@ -178,29 +162,26 @@ p {
 .contact-container {
     display: flex;
     padding-top: 5rem;
-
 }
 
 .funky-arrow-right {
     margin-right: 1.5rem;
     width: 13rem;
+    padding-bottom: 0.5rem;
 }
 
-.contact-info {
+.email-container {
     padding-top: 1rem;
     justify-content: center;
     display: flex;
-    align-items: center;
-    /* center child elements vertically */
-    justify-content: center;
-    /* center child elements horizontally */
+    align-items: center; /* center child elements vertically */
+    justify-content: center; /* center child elements horizontally */
 }
 
-.contact-info h2 {
+.email-container h2 {
     font-size: 3rem;
     width: 100%;
 }
-
 
 .footer-smallprint {
     padding-top: 12vw;
@@ -213,167 +194,14 @@ p {
 
 .mynametag {
     font-size: 1rem;
-    order: 1;
-    /* move the mynametag div to the left */
+    order: 1; /* move the mynametag div to the left */
 }
 
 .footer-smallprint p {
     font-size: 1rem;
-    order: 2;
-    /* move the p tag to the right */
+    order: 2; /* move the p tag to the right */
 }
 
-/*optimasied for tablet*/
-@media (max-width: 1200px) {
-
-    /* LANDING PAGE HEADER */
-    .header {
-        margin: 0rem;
-        padding-top: 5rem;
-        padding-left: 1.5rem;
-        padding-bottom: 8rem;
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 4vw;
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    /* PROJECT GALLERY */
-    .title {
-        padding-left: 0.5rem;
-        padding-top: 6rem;
-    }
-
-    #gallery {
-        flex-direction: column;
-        padding-bottom: 4rem;
-    }
-
-    #col2 {
-        margin-top: 0;
-    }
-
-    .flex-image {
-        max-width: 100%;
-        height: auto;
-        padding: 0.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-
-    /* INFO PAGE*/
-
-    .about-me-container {
-        padding-top: 0rem;
-        padding-left: 2.5rem;
-        background-color: beige;
-    }
-
-    /* h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-bottom: 2rem;
-} */
-
-    /* .about-me-title h1 {
-    width: 50%;
-    line-height: normal;
-    font-size: 3vw;
-    padding-bottom: 3rem;
-} */
-
-
-    /* .about-me-container2 {
-    padding-left: 2.5rem;
-} */
-
-
-    .more-about-me {
-        flex-direction: column;
-    }
-
-}
-
-
-@media screen and (max-width: 900px) {
-    .topnav a {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-/*optimised for mobile*/
-@media (max-width:800px) {
-
-    /* LANDING PAGE HEADER */
-    .header {
-        margin: 0rem;
-        padding-left: 1.5rem;
-        padding-bottom: 8rem;
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 4vw;
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    /* PROJECT GALLERY */
-    .title {
-        padding-left: 0.5rem;
-        padding-top: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-        padding-top: 1rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    #gallery {
-        flex-direction: column;
-    }
-
-    #col2 {
-        margin-top: 0;
-    }
-
-    .flex-image {
-        max-width: 100%;
-        height: auto;
-        padding: 0.5rem;
-    }
-
-}
 
 
 /* INFO PAGE STYLING */
@@ -451,6 +279,7 @@ h3 {
     flex: 20%;
 }
 
+
 /* PROJECT NAV TOP BAR */
 
 .project-nav-top {
@@ -491,6 +320,7 @@ h3 {
     order: 2;
 }
 
+
 /* PROJECT TITLE */
 
 .project-title {
@@ -511,7 +341,6 @@ h3 {
     align-items: flex-start;
     gap: 5rem;
 }
-
 
 #col8 {
     flex: 40%;
