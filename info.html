@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- animation css file -->
-<link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="animations.css">
 
     <!-- optimasation for different devices CSS file-->
     <link rel="stylesheet" href="optimasation.css">
@@ -139,10 +139,13 @@
         <h2 class="footer-text">If have any questions / feedback or would like to work together drop me a
             message.</h2>
 
-        <div class="contact-container">
+        <div class="contact-container fadeInBottom">
             <img class="funky-arrow-right" src="arrows/funky-arrow-right.svg">
-            <div class="email-container">
-                <h2>designbytoma@gmail.com</h2>
+            <div class="tooltip">
+                <a onclick="copyToClipboard('#p1')" class="email-container left1">
+                    <h2 id="copy-email">graphicsbytoma@gmail.com</h2>
+                </a>
+                <span class="tooltiptext">Click to Copy</span>
             </div>
         </div>
 

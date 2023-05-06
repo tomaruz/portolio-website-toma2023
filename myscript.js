@@ -92,6 +92,7 @@ function fallbackCopyToClipboard(copyEmail, tooltip) {
   tooltip.innerHTML = "COPIED!";
 }
 
+
 const emailContainer = document.querySelector(".email-container");
 const tooltip = document.querySelector(".tooltiptext");
 
