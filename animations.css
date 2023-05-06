@@ -232,6 +232,34 @@ a.left:hover:before {
     opacity: 1;
 }
 
+a.left1 {
+    position: relative;
+    text-decoration: none;
+}
+
+a.left1::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    visibility: hidden;
+    transition: all 0.7s ease-in-out;
+    opacity: 0;
+    text-decoration: none;
+}
+
+a.left1:hover:before {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    text-decoration: none;
+}
+
+
+
 /* GALLERY IMAGE ANIMATION ON HOVER */
 
 /* .flex-image:hover {
