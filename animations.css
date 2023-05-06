@@ -235,13 +235,14 @@ a.left:hover:before {
 a.left1 {
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.left1::before {
     content: '';
     position: absolute;
     width: 0;
-    height: 5px;
+    height: 4px;
     bottom: 0;
     left: 0;
     background-color: #121212;
@@ -249,6 +250,7 @@ a.left1::before {
     transition: all 0.7s ease-in-out;
     opacity: 0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.left1:hover:before {
@@ -256,8 +258,49 @@ a.left1:hover:before {
     width: 100%;
     opacity: 1;
     text-decoration: none;
+    cursor: pointer;
 }
 
+
+/* CLICK TO COPY TEXT WHEN HOVER ON GMAIL ADDRESS */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 
 /* GALLERY IMAGE ANIMATION ON HOVER */

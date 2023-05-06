@@ -167,11 +167,10 @@ p {
 .funky-arrow-right {
     margin-right: 1.5rem;
     width: 13rem;
-    padding-bottom: 0.5rem;
 }
 
 .email-container {
-    padding-top: 1rem;
+    padding-top: 1.8rem;
     justify-content: center;
     display: flex;
     align-items: center; /* center child elements vertically */
