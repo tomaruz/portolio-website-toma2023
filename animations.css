@@ -247,7 +247,7 @@ a.left1::before {
     left: 0;
     background-color: #121212;
     visibility: hidden;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.8s ease-in-out;
     opacity: 0;
     text-decoration: none;
     cursor: pointer;
@@ -282,7 +282,7 @@ a.left1:hover:before {
     bottom: 80%;
     left: 50%;
     margin-left: -60px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
     opacity: 0;
   }
   
@@ -303,15 +303,29 @@ a.left1:hover:before {
   }
 
 
+
 /* GALLERY IMAGE ANIMATION ON HOVER */
 
-/* .flex-image:hover {
-    filter: brightness(40%);
-    transform: scale(1.05);
-    transition: all 0.4s;
+.image-container {
+    overflow: hidden;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.flex-image:active {
-    filter: brightness(80%);
-} */
+img {
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+}
+
+.image-container:hover img{
+    transform: scale(1.04);
+    /* filter: brightness(0.8); */
+}
 

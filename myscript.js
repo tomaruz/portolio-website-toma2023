@@ -108,7 +108,7 @@ emailContainer.addEventListener("click", function() {
 emailContainer.addEventListener("mouseout", function() {
   setTimeout(function() {
     tooltip.innerHTML = "Click to Copy";
-  }, 500); // change back to "Click to Copy" after 500 milliseconds. This delay matches the CSS animation time of the container fading out. 
+  }, 800); // change back to "Click to Copy" after 800 milliseconds. This delay matches the CSS animation time of the container fading out. 
 });
 
 
