@@ -331,8 +331,7 @@ h3 {
 .about-project {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 5rem;
-    padding-left: 6.5rem;
+    padding: 6.5rem;
     width: 85%;
     justify-content: space-between;
     align-items: flex-start;
