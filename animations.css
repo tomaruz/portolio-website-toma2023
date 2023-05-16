@@ -329,3 +329,15 @@ img {
     /* filter: brightness(0.8); */
 }
 
+
+/* previous and next project buttons at the bottom */
+.column:hover .left::before {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
+
+.column:hover .image-container img {
+    transform: scale(1.04);
+    /* filter: brightness(0.8); */
+}
