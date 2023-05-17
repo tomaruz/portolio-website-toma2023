@@ -370,6 +370,16 @@ h3 {
 }
 
 
+/* BOTTOM NAV WITH IMAGES */
+
+#gallery1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    margin-bottom: 5rem;
+}
+
+
 .withimage {
     display: flex;
     padding-left: 2.5rem;

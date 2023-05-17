@@ -6,7 +6,7 @@
     .header {
         margin: 0rem;
         padding-top: 5rem;
-        padding-left: 1.5rem;
+        padding-left: 2.5rem;
         padding-bottom: 8rem;
         width: 80%;
     }
@@ -19,56 +19,71 @@
 
     /* PROJECT GALLERY */
     .title {
-        padding-left: 0.5rem;
         padding-top: 6rem;
     }
 
     #gallery {
         flex-direction: column;
-        padding-bottom: 4rem;
+        padding-bottom: 3rem;
     }
 
     #col2 {
         margin-top: 0;
     }
 
-    .flex-image {
-        max-width: 100%;
-        height: auto;
-        padding: 0.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+    .image-container {
+        margin-left: 1.5rem;
     }
 
     /* INFO PAGE*/
 
     .about-me-container {
-        padding-top: 0rem;
+        padding-top: 5rem;
         padding-left: 2.5rem;
-        background-color: beige;
     }
 
-    /* h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-bottom: 2rem;
-} */
-
-    /* .about-me-title h1 {
-    width: 50%;
-    line-height: normal;
-    font-size: 3vw;
-    padding-bottom: 3rem;
-} */
-
-
-    /* .about-me-container2 {
-    padding-left: 2.5rem;
-} */
-
+    .about-me-container h1 {
+        font-size: 2.5rem;
+        width: 60%;
+    }
 
     .more-about-me {
         flex-direction: column;
+        width: 55%;
+    }
+
+    .about-me-container p {
+        font-size: medium;
+    }
+
+    .about-me-container2 p {
+        font-size: medium;
+    }
+
+    .footer-container h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    /* MORE ABOUT PROJECT SEA POLLUTION INFO PAGE */
+    
+    /* ABOUT PROJECT */
+    .about-project {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 6.5rem;
+        width: 85%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+
+    .about-project {
+        flex-direction: column;
+    }
+
+    .lower {
+        padding-top: 10%;
     }
 
 }
@@ -143,10 +158,61 @@
         margin-top: 0;
     }
 
-    .flex-image {
-        max-width: 100%;
-        height: auto;
-        padding: 0.5rem;
+    .image-container {
+        margin-left: 0.5rem;
+    }
+
+    /* INFO PAGE*/
+
+    .about-me-container {
+        padding-top: 5rem;
+        padding-left: 2.5rem;
+    }
+
+    .about-me-container h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        padding-right: 0.5rem;
+    }
+
+    .more-about-me {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 2.5rem;
+    }
+
+    .about-me-container p {
+        font-size: medium;
+    }
+
+    .about-me-container2 p {
+        font-size: medium;
+    }
+
+    .footer-container h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #col5 {
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+    }
+
+/* FOOTER */
+
+    .funky-arrow-right {
+        margin-right: 1.5rem;
+        width: 10rem;
+    }
+    
+    .email-container {
+        padding-top: 1rem;
+    }
+    
+    .email-container h2 {
+        font-size: 2rem;
+        width: 100%;
     }
 
 }
