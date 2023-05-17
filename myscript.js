@@ -79,6 +79,7 @@ function copyToClipboard(element) {
   }
 }
 
+// If the Clipboard API is not available, it immediately falls back to using document.execCommand("copy") to copy the text to the clipboard.
 function fallbackCopyToClipboard(copyEmail, tooltip) {
   const temp = document.createElement("textarea");
   document.body.appendChild(temp);
