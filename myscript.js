@@ -39,7 +39,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-
 // SCROLL UP ANIMATION TO THE LANDING PAGE TOP
 
 document.addEventListener("DOMContentLoaded", function (event) {

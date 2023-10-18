@@ -324,7 +324,7 @@ img {
     -ms-transition: all 1s ease-out;
 }
 
-.image-container:hover img{
+.project-container:hover img{
     transform: scale(1.04);
     /* filter: brightness(0.8); */
 }
